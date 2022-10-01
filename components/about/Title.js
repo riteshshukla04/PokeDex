@@ -43,6 +43,7 @@ const style=StyleSheet.create({
         fontFamily:"poppins",
         paddingLeft:16,
         fontWeight:'bold',
+        textTransform:"capitalize"
 
     },
     pokeTitle1:{
@@ -50,7 +51,7 @@ const style=StyleSheet.create({
         fontSize:24,
         fontFamily:"poppins",
         fontWeight:'bold',
-        textTransform:"capitalize"
+        
 
     },
     Title:{

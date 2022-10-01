@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { Text } from "react-native";
 import { useQuery } from "react-query";
+import Loading from "../Loading/Loading";
 
 export const GlobalContext=React.createContext();
 function lpad(value, padding) {
@@ -33,7 +34,7 @@ export const GlobalProvider=(props)=>{
     
     const {data,isLoading,isError,error}=useQuery("PokemonData",fetchData);
     if(isLoading){
-        return <Text>Loading...</Text>
+        return <Loading/>
     }
     return(
         <GlobalContext.Provider value={[data,isLoading,isError,error]}>

@@ -34,7 +34,7 @@ import HomeNavigator from './components/Navigator/HomeNavigator';
 import Loading from './components/Loading/Loading';
 import BottomCard from './components/about/BottomCard';
 
-
+import RNBootSplash from "react-native-bootsplash";
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const queryClient = new QueryClient();

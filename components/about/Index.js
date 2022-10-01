@@ -4,6 +4,7 @@ import React from "react";
 
 import { View,Text, StyleSheet } from "react-native";
 import { useQuery } from "react-query";
+import Loading from "../Loading/Loading";
 import BottomCard from "./BottomCard";
 import AboutPokemon from "./PokemonTypes";
 
@@ -40,7 +41,7 @@ const DetailedPokemon=()=>{
     const [id,setId]=React.useState(routeid);
     const {data,isLoading}=useQuery(["AboutPokemon",id],()=>fetchData(id));
     if(isLoading){
-        return <Text>Loading....</Text>
+        return <Loading/>
     }
     return (
        <>
