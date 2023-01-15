@@ -19,5 +19,5 @@ jobs:
         with:
           ruby-version: '2.6'
       - run: npm ci
-        name:Install Node Modules
+        name: Install Node Modules
         
