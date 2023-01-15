@@ -21,7 +21,7 @@ jobs:
       - name: Install Node Modules
           run:npm ci  
       - name: Build and Deploy on UAT
-        script: |
+        run: |
             cd android
             bundle install
             fastlane createAPK
