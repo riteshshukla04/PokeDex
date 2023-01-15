@@ -23,7 +23,10 @@ platform :android do
 
   desc "Create a new APK"
   lane :createAPK do
-    gradle(task: "clean assembleRelease")
+    gradle(
+      project_dir: './android',
+      task: "clean assembleRelease"
+      )
     
   
     # sh "your_script.sh"
