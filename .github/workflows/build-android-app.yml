@@ -9,7 +9,7 @@ permissions: read-all
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
       # - run : sudo chown -R $USER:$USER ${{ github.workspace }}
       - uses: actions/checkout@v2
@@ -28,10 +28,7 @@ jobs:
       - run: |
           cd android
           bundle install
-          fastlane createAPK
+          bundle exec fastlane createAPK
           
-      - run: |
-          cd android
-          bundle install
-          sudo bundle exec fastlane createAPK
+ 
           
