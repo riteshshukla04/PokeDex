@@ -5,7 +5,7 @@ on:
       - 'master'
 
 
-permissions: read-all|write-all
+permissions: read-all
 
 jobs:
   build:
