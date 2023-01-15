@@ -20,4 +20,8 @@ jobs:
           ruby-version: '2.6'
       - run: npm ci
         name: Install Node Modules
-        
+      - run: |
+          cd android
+          bundle install
+          fastlane createAPK
+          
