@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - 'master'
+
+
+permissions: read-all|write-all
+
 jobs:
   build:
     runs-on: macos-latest
