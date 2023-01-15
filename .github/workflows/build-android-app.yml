@@ -21,8 +21,7 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '15'
       - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: '2.x'
+      
       - run: npm install
         name: Install Node Modules
 
