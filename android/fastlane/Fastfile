@@ -24,6 +24,7 @@ platform :android do
   desc "Create a new APK"
   lane :createAPK do
     gradle(
+      gradle_path: ".././android/gradlew",
       project_dir:".././android",
       task: "clean assembleRelease"
       )
