@@ -9,9 +9,9 @@ permissions: read-all
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
-      - run : sudo chown -R $USER:$USER ${{ github.workspace }}
+      # - run : sudo chown -R $USER:$USER ${{ github.workspace }}
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
