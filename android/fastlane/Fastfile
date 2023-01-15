@@ -21,8 +21,8 @@ platform :android do
     gradle(task: "test")
   end
 
-  desc "Submit a new Beta Build to Crashlytics Beta"
-  lane :beta do
+  desc "Create a new APK"
+  lane :createAPK do
     gradle(task: "clean assembleRelease")
     
   
