@@ -20,11 +20,6 @@ jobs:
           ruby-version: '2.6'
       - name: Install Node Modules
           run:npm ci  
-      - name: Build and Deploy on UAT
-        run: |
-            cd android
-            bundle install
-            fastlane createAPK
-            
+
 
         
