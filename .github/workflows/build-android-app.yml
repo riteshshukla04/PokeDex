@@ -21,14 +21,14 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '15'
       - uses: actions/setup-ruby@v1
-      
+
       - run: npm install
         name: Install Node Modules
 
       - run: |
           cd android
           bundle install
-          sudo bundle exec fastlane createAPK
+          bundle exec fastlane createAPK
           
       - run: |
           cd android
