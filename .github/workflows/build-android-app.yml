@@ -22,16 +22,14 @@ jobs:
           java-version: '15'
       - uses: actions/setup-ruby@v1
 
-      # - run: npm install
-      #   name: Install Node Modules
-      
-      - run: echo ${{secrets.APIKEY}}
+      - run: npm install
         name: Install Node Modules
+      
 
-      # - run: |
-      #     cd android
-      #     bundle install
-      #     bundle exec fastlane createAPK
+      - run: |
+           cd android
+           bundle install
+           bundle exec fastlane createAPK
           
  
           
