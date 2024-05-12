@@ -20,7 +20,10 @@ jobs:
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '15'
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+            ruby-version: '3.3' # Not needed with a .ruby-version file
+            bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - run: npm install
         name: Install Node Modules
