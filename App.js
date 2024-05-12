@@ -25,7 +25,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import SortByNumber from './components/sortbynumber';
+
 import DetailedPokemon from './components/about/Index';
 import {GlobalProvider} from './components/Actions/GlobalProvider';
 import {QueryClient, QueryClientProvider} from 'react-query';
