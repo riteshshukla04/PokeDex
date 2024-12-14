@@ -52,4 +52,4 @@ Follow these steps to get the app up and running on your local machine:
    npm run android
    ```
 ### Video
-![Pokedox Video](assets\video.gif)
+![Pokedox Video](assets/video.gif)
